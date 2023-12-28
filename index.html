@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#333">
+    <link rel="icon" href="images/player_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42b0a34f06.js" crossorigin="anonymous"></script>
+    <title>Sound Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sound_player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="images/quran.jpg" alt="quran" class="sound_img">
+            <h1>Mariam</h1>
+            <p>ياسر الدوسري</p>
+            <audio  id="sound">
+                <source src="images/Mariam.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div> 
+                <div id="play_pause"><i class="fa-solid fa-play" id="control_icon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
